@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Belgrano&family=Rhodium+Libre&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: url("../Images/ForDesktopBG.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .9;
+    font-family: 'Open Sans' !important;
+}
+.Flinks .nav-item a{
+    color: rgb(218, 211, 211) !important;
+    font-size: 13px !important;
+}
+.Flinks .nav-item a:hover{
+    border-bottom: none;
+}
+
+
+/* nav{
+    background-color: black;
+    opacity: .8;
+    color: #fff;
+} */
+.mainnav{
+    background-color: rgba(0, 0, 0, 0.829);
+    color: solid rgb(255, 255, 255);
+    text-transform:capitalize;
+    font-family: 'Open Sans' !important;
+    font-size: 22px;
+}
+
+nav{
+    /* background-color: black; */
+    color: rgb(243, 239, 239);
+    font-family: 'Open Sans' !important;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.nav-item a{
+    color: white !important;
+    text-transform:capitalize;
+    font-family: 'Open Sans';font-size: 17px;
+    font-weight: 100;
+    margin-left: 8px;
+}
+
+/* .nav-item a{
+    color: white !important;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Rhodium Libre', serif;
+    font-weight: 100;
+    margin-left: 8px;
+} */
+.nav-item a:hover{
+   padding-bottom: 2px;
+   color: white;
+   border-bottom: 1px solid red;
+}
+
+/* #loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black url('../Images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 99999;
+} */
+
+.card{
+    box-sizing: border-box;
+    width: auto;
+    background-color: #d99494bd !important;
+    border:4px solid #ee8f8f !important;
+    transition: transform 1s ease-in-out; 
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+.card:hover {
+    transform: scale(1.03, 1.07);
+}
+
+.card-title{
+    color: #ffb8b3;
+    font-size: 28px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.card-text{
+    color: white;
+    font-size: 16px;
+    padding-bottom: 2px;
+}
+
+.button{
+    background-color: #FFB9B9 !important;
+    
+    margin-bottom: 7.7px;
+    margin-top:1px;
+    border-radius: 22px !important;
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    color: black;
+    box-shadow:  rgba(66, 14, 14, 0.884) 0px 4px 5px 0px;
+    padding: 1px 42px !important;
+}
+
+
+@media(max-width:1006px){
+    .card-title{
+        
+        font-size: 24px;
+        
+    }
+}

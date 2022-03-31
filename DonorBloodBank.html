@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Donate Blood Dashboard</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+		name='viewport' />
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+	<link rel="stylesheet" href="assets/css/ready.css">
+	<link rel="stylesheet" href="assets/css/demo.css">
+
+	<!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="main-header">
+			<div class="logo-header">
+				<a href="patientDashboard.html" class="logo">
+					Donor Dashboard
+				</a>
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
+					data-target="collapse" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<button class="topbar-toggler more"><i class="la la-ellipsis-v"></i></button>
+			</div>
+			<nav class="navbar navbar-header navbar-expand-lg">
+				<div class="container-fluid">
+
+
+					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+						<li class="nav-item dropdown hidden-caret">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="la la-bell"></i>
+								<span class="notification" id="notify"></span>
+							</a>
+							<ul class="dropdown-menu notif-box" aria-labelledby="navbarDropdown">
+								<li>
+									<div class="dropdown-title">You have <span id="updateNotice"></span> new notifications</div>
+								</li>
+								<li>
+									<div class="notif-center">
+										<a href="#">
+											<div class="notif-icon "> <i class="la la-paper-plane-o"></i>
+											</div> 
+											<div class="notif-content">
+												<span class="block" id="noticeMsg">
+													<span id="notifNo"></span>
+													Request have been send to blood bank. 
+												</span>
+											</div>
+										</a>
+								<li>
+									<a class="see-all" id="clear"> <strong>Clear
+											notifications</strong> <i class="la la-angle-right"></i> </a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"
+								aria-expanded="false"> <img src="./Images/Prof.png" alt="user-img" width="36"
+									class="img-circle"><span id="donorprofilename"></span></span> </a>
+							<ul class="dropdown-menu dropdown-user">
+								<li>
+									<div class="user-box">
+										<div class="u-img"><img src="./Images/Prof.png" alt="user"></div>
+										<div class="u-text mt-3">
+											<h4 id="username"></h4>
+											<p class="text-muted" id="usermail"></p>
+										</div>
+									</div>
+								</li>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="DonorProfile.html"><i class="ti-user"></i> My Profile</a>
+								<a class="dropdown-item" id="logout"  style="cursor: pointer;"><i class="fa fa-power-off"></i> Logout</a>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="sidebar">
+			<div class="scrollbar-inner sidebar-wrapper">
+				<div class="user">
+					<div class="photo">
+						<img src="./Images/Prof.png">
+					</div>
+					<div class="info">
+						<a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+							<span>
+								<p id="donername"></p>
+								<span class="user-level">Donate Blood</span>
+								<span class="caret"></span>
+							</span>
+						</a>
+						<div class="clearfix"></div>
+
+						<div class="collapse in" id="collapseExample" aria-expanded="true">
+							<ul class="nav">
+								<li>
+									<a href="DonorProfile.html">
+										<span class="link-collapse">My Profile</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<ul class="nav">
+					<li class="nav-item">
+						<a href="donorDashboard.html">
+							<i class="la la-dashboard"></i>
+							<p>Dashboard</p>
+							<!-- <span class="badge badge-count">5</span> -->
+						</a>
+					</li>
+					<!-- <li class="nav-item">
+						<a href="components.html">
+							<i class="la la-paper-plane-o"></i>
+							<p>Requests</p>
+							<span class="badge badge-count">14</span>
+						</a>
+					</li> -->
+					<li class="nav-item">
+						<a href="donorHistory.html">
+							<i class="la la-history"></i>
+							<p>History</p>
+							<!-- <span class="badge badge-count">50</span> -->
+						</a>
+					</li>
+					<!-- <li class="nav-item">
+						<a href="notifications.html">
+							<i class="la la-bell"></i>
+							<p>Notifications</p>
+							<span class="badge badge-success">3</span>
+						</a>
+					</li> -->
+					<li class="nav-item active">
+						<a href="DonorBloodBank.html">
+							<i class="la la-tint" style="color: black;"></i>
+							<p>Blood Banks</p>
+							<!-- <span class="badge badge-danger">25</span> -->
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#">
+							<i class="la la-shield"></i>
+							<p>Policy</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main-panel">
+			<div class="content">
+				<div class="container-fluid">
+					
+                    <div class="heading text-center">
+                        <h2>Your Saved Blood Banks</h2>
+                    </div>
+						
+				<hr>		
+					</div>
+
+					<div class="container mt-5 pt-5 text-center" id="nosave">
+						<h3 class="mt-5">You haven't save any blood bank</h3>
+					</div>
+
+					<div class="row mt-5" id="showSaveBank">
+						
+					</div>
+
+
+					<!--Footer-->
+					<!-- <footer class="footer mb-0">
+						<div class="container-fluid">
+							<nav class="pull-left">
+								<ul class="nav">
+									<li class="nav-item">
+										<a class="nav-link" href="http://www.themekita.com">
+											ThemeKita
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">
+											Help
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="https://themewagon.com/license/#free-item">
+											Licenses
+										</a>
+									</li>
+								</ul>
+							</nav>
+							<div class="copyright ml-auto">
+								2018, made with <i class="la la-heart heart text-danger"></i> by <a
+									href="http://www.themekita.com">ThemeKita</a>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>-->
+		</div> 
+
+
+
+		<script type="module" src="./js/donorSavedBloodBank.js"></script>
+
+<script src="assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="assets/js/core/popper.min.js"></script>
+<script src="assets/js/core/bootstrap.min.js"></script>
+<script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+<script src="assets/js/ready.min.js"></script>
+
+				
+
+</body>
+
+</html>

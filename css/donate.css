@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* body{
+    background-image: url('../Images/bg1.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .9;
+} */
+body{
+    background-image: url("../Images/ForDesktopBG.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .9;
+}
+
+.Flinks .nav-item a{
+    color: rgb(218, 211, 211) !important;
+    font-size: 13px !important;
+}
+.Flinks .nav-item a:hover{
+    border-bottom: none;
+}
+
+.container{
+	/* margin-top: -38px !important; */
+	position: relative;
+	width: 100%;
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    padding-top: 8%;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 90%;
+	left: 0;
+	top: 0;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+    height: 80% !important;
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    padding-right: 10px;
+}
+
+.left{
+	background: url("../Images/donate1.jpeg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.left-signupForm{
+	background: url("../Images/donate1.jpeg") no-repeat center;
+	background-size: 99% 95%;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 30px;
+}
+
+.right-signupForm{
+	padding: 5px 15px;
+}
+
+.right h2, .right-signupForm h2{ 
+    font-family: Roboto Mono;
+    font-size: 30px;
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 600;
+}
+
+.right h2:after, .right-signupForm h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color:  	#008B8B;
+}
+
+.right h3, .right-signupForm h3{
+    font-family: Roboto Mono;
+    font-size: 19px;
+    font-weight: 100;
+}
+
+.form-control{
+	padding: 0.175rem .75rem !important;
+	font-size: 12px !important;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(61, 56, 56, 0.2);
+	padding-top: 0.1rem ;
+    padding-bottom: .1rem;
+	font-size: 14px;
+	margin-bottom: 22px;
+	transition: .3s;
+    text-indent: 6px;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.form-text, #errorMessage{
+	margin-top: -1px !important;
+	color: red;
+}
+
+.form-text{
+	float: left;
+}
+
+.btn{
+	margin-top: -3px;
+    width: 120px;
+	background-color:#8b0000 !important;
+	color: #fff !important;
+	font-size: 14px !important;
+	border: none;
+	outline: none;
+	cursor: pointer;
+    border-radius: 20px !important;
+    text-align: center !important;
+}
+
+#btn1{
+	padding: 5px 2px !important;
+}
+
+#foot{
+	margin-top: 44px !important;
+}
+
+.btn:hover{
+    background-color: #cc3b3b !important;
+	color: #ffff !important;
+}
+#btn2{
+    font-size: 17px;
+}
+.text{
+    margin-top: -100px !important;
+    text-align: right;
+	font-size: 14px !important;
+	margin-bottom: -10px;
+}
+
+.textSignUp{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	float: right;
+	text-align: right;
+}
+
+.text a, .textSignUp a{
+	color: black;
+}
+
+.text a:hover, .textSignUp a:hover{
+	color: #8b0000;
+	text-decoration: none;
+}
+
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+		margin-top: 50px;
+	}
+	.left{
+		height: 270px;
+	}
+	.left-signupForm{
+		height: 270px;
+		background-size: cover;
+	}
+}
+
+

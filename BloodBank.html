@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Need Blood Dashboard</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+		name='viewport' />
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+	<link rel="stylesheet" href="assets/css/ready.css">
+	<link rel="stylesheet" href="assets/css/demo.css">
+
+	<!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="main-header">
+			<div class="logo-header">
+				<a href="patientDashboard.html" class="logo">
+					Patient Dashboard
+				</a>
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
+					data-target="collapse" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<button class="topbar-toggler more"><i class="la la-ellipsis-v"></i></button>
+			</div>
+			<nav class="navbar navbar-header navbar-expand-lg">
+				<div class="container-fluid">
+
+
+					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+						<li class="nav-item dropdown hidden-caret">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="la la-bell"></i>
+								<span class="notification">1</span>
+							</a>
+							<ul class="dropdown-menu notif-box" aria-labelledby="navbarDropdown">
+								<li>
+									<div class="dropdown-title">You have 1 new notification</div>
+								</li>
+								<li>
+									<div class="notif-center">
+										<a href="#">
+											<div class="notif-icon notif-primary"> <i class="la la-user-plus"></i>
+											</div>
+											<div class="notif-content">
+												<span class="block">
+													Your Request has been accepted
+												</span>
+											</div>
+										</a>
+								<li>
+									<a class="see-all" href="javascript:void(0);"> <strong>See all
+											notifications</strong> <i class="la la-angle-right"></i> </a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"
+								aria-expanded="false"> <img src="./Images/Prof.png" alt="user-img" width="36"
+									class="img-circle"><span>Ankit Kante</span></span> </a>
+							<ul class="dropdown-menu dropdown-user">
+								<li>
+									<div class="user-box">
+										<div class="u-img"><img src="./Images/Prof.png" alt="user"></div>
+										<div class="u-text mt-3">
+											<h4>Ankit Kante</h4>
+											<p class="text-muted">hello@themekita.com</p>
+										</div>
+									</div>
+								</li>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#"><i class="ti-user"></i> My Profile</a>
+								<a class="dropdown-item" href="#"><i class="fa fa-power-off"></i> Logout</a>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="sidebar">
+			<div class="scrollbar-inner sidebar-wrapper">
+				<div class="user">
+					<div class="photo">
+						<img src="./Images/Prof.png">
+					</div>
+					<div class="info">
+						<a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+							<span>
+								Ankit Kante
+								<span class="user-level">Need Blood</span>
+								<span class="caret"></span>
+							</span>
+						</a>
+						<div class="clearfix"></div>
+
+						<div class="collapse in" id="collapseExample" aria-expanded="true">
+							<ul class="nav">
+								<li>
+									<a href="#profile">
+										<span class="link-collapse">My Profile</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<ul class="nav">
+					<li class="nav-item">
+						<a href="patientDashboard.html">
+							<i class="la la-dashboard"></i>
+							<p>Dashboard</p>
+							<span class="badge badge-count">5</span>
+						</a>
+					</li>
+					<!-- <li class="nav-item">
+						<a href="components.html">
+							<i class="la la-paper-plane-o"></i>
+							<p>Requests</p>
+							<span class="badge badge-count">14</span>
+						</a>
+					</li> -->
+					<li class="nav-item">
+						<a href="history.html">
+							<i class="la la-history"></i>
+							<p>History</p>
+							<span class="badge badge-count">50</span>
+						</a>
+					</li>
+					<!-- <li class="nav-item">
+						<a href="notifications.html">
+							<i class="la la-bell"></i>
+							<p>Notifications</p>
+							<span class="badge badge-success">3</span>
+						</a>
+					</li> -->
+					<li class="nav-item active">
+						<a href="BloodBank.html">
+							<i class="la la-tint" style="color: black;"></i>
+							<p>Blood Banks</p>
+							<span class="badge badge-danger">25</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#">
+							<i class="la la-shield"></i>
+							<p>Policy</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main-panel">
+			<div class="content">
+				<div class="container-fluid">
+					
+						<div class="heading text-center">
+							<h2>Your Saved Blood Banks</h2>
+						</div>
+						
+					<hr>
+
+					<div class="row mt-5">
+						<div class="col-md-4 col-lg-3">
+							<div class="card">
+								<a href="components.html"><img src="./Images/Sahara.jpg" class="card-img-top pt-2" alt="..."></a>
+								<div class="card-body">
+									<div class="text-center pt-1">
+										<h4 class="card-title">Saylani Blood Bank</h4>
+										<p class="card-text mt-1">
+											<b>Location:</b>
+											<br>
+											<span>Main Gurumandar, Community Centre, Karachi.</span>
+										</p>
+										<p class="card-text mt-1">
+											<b>Available Blood Group:</b>
+											<br>
+											<span> A-, A+, B-, AB, AB-, AB+, O-</span>
+										</p>
+										<a class="btn btn-success button1 float-left mt-1 mr-0" data-toggle="modal"
+											data-target="">Saved</a>
+										<a class="btn btn-danger button2 float-right mt-1 mr-0" data-toggle="modal"
+											data-target="#request">Request</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-3">
+							<div class="card ">
+								<img src="./Images/Saylani.jpg" class="card-img-top pt-2" alt="...">
+								<div class="card-body">
+									<div class="text-center pt-1">
+										<h4 class="card-title">Saylani Blood Bank</h4>
+										<p class="card-text mt-1">
+											<b>Location:</b>
+											<br>
+											<span>Main Gurumandar, Community Centre, Karachi.</span>
+										</p>
+										<p class="card-text mt-1">
+											<b>Available Blood Group:</b>
+											<br>
+											<span> A-, A+, B-, AB, AB-, AB+, O-</span>
+										</p>
+										<a class="btn btn-success button1 float-left mt-1 mr-0" data-toggle="modal"
+											data-target="">Saved</a>
+										<a class="btn btn-danger button2 float-right mt-1 mr-0" data-toggle="modal"
+											data-target="#request">Request</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!--Footer-->
+					<!-- <footer class="footer mb-0">
+						<div class="container-fluid">
+							<nav class="pull-left">
+								<ul class="nav">
+									<li class="nav-item">
+										<a class="nav-link" href="http://www.themekita.com">
+											ThemeKita
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">
+											Help
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="https://themewagon.com/license/#free-item">
+											Licenses
+										</a>
+									</li>
+								</ul>
+							</nav>
+							<div class="copyright ml-auto">
+								2018, made with <i class="la la-heart heart text-danger"></i> by <a
+									href="http://www.themekita.com">ThemeKita</a>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div> -->
+
+
+
+					<!-- Modal of prevent-->
+					<div class="modal fade" id="request" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+						aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5>Request Blood From Blood Bank</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<p>
+										Filled accurate information to get response early. If all your information are
+										correct after submission of form you will recieve respond with 10 to 15
+										minutes.
+									</p>
+
+									<form>
+										<input type="text" class="form-control" id="inputPatientName"
+											placeholder="Patient Name">
+										<small id="patientname" class="form-text mt-2 mb-3"></small>
+
+										<input type="text" class="form-control" id="inputPatientId"
+											placeholder="Patient Id">
+										<small id="patientId" class="form-text mt-2 mb-3"></small>
+
+										<input type="text" class="form-control" id="inputVaccinationId"
+											placeholder="Certificate Number">
+										<small id="vaccinationId" class="form-text mt-2 mb-3">*Covid Vaccination
+											Certificate Number</small>
+
+										<input type="text" class="form-control" id="inputHospitalName"
+											placeholder="Hospital Name">
+										<small id="hospitalname" class="form-text mt-2 mb-3"></small>
+
+										<input type="text" class="form-control" id="inputDoctorName"
+											placeholder="Doctor Name">
+										<small id="doctorname" class="form-text mt-2 mb-3"></small>
+
+										<input type="text" class="form-control" id="inputQuantity"
+											placeholder="Quantity (Pints)">
+										<small id="quantity" class="form-text mt-2 mb-3"></small>
+
+										<select class="form-control mb-4" id="selectBloodGroup">
+											<option>Blood Group</option>
+											<option>A+</option>
+											<option>A-</option>
+											<option>B+</option>
+											<option>B-</option>
+											<option>AB+</option>
+											<option>AB-</option>
+											<option>O+</option>
+											<option>O-</option>
+										</select>
+
+										<a class="btn btn-danger button float-right text-light" id="btn1">Send
+											Request</a>
+										<br>
+										<small class="mt-0 pt-0" id="errorMessage"></small>
+									</form>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+</body>
+<script src="assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="assets/js/core/popper.min.js"></script>
+<script src="assets/js/core/bootstrap.min.js"></script>
+<script src="assets/js/plugin/chartist/chartist.min.js"></script>
+<script src="assets/js/plugin/chartist/plugin/chartist-plugin-tooltip.min.js"></script>
+<script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+<script src="assets/js/ready.min.js"></script>
+<script src="assets/js/demo.js"></script>
+
+</html>

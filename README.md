@@ -1,6 +1,8 @@
 # Blood Support
 
-Creating a support platform for donors, patients, blood banks, hospitals and maternity centers, so that they can easily connect with nearby blood donors and blood banks.
+Creating a support platform to bridge the gap between donors, patients, blood banks, hospitals and maternity centers, so that they can easily connect with nearby blood donors and blood banks.
+
+Website Link: http://blood-support.live/
 
 ![image1](https://user-images.githubusercontent.com/52650290/161105072-15ee13f7-3fb6-4a45-a382-cc2e5aa3cd8e.png)
 

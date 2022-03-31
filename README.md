@@ -7,7 +7,7 @@ Creating a support platform for donors, patients, blood banks, hospitals and mat
 ## Website Contents
 - [Patient](#Patient)
 - [Donor](#Donor)
-- [Maternal/Hospital/BloodBanks](#Maternal/Hospital/BloodBanks)
+- [Organizations (Maternal/Hospital/BloodBanks)](#Maternal-Hospital-BloodBanks)
 
 
 ## Patient
@@ -34,7 +34,7 @@ Creating a support platform for donors, patients, blood banks, hospitals and mat
 ![image](https://user-images.githubusercontent.com/52650290/161109119-ce48882b-8684-43b6-ab58-36f5cd5dba4f.png)
 
 
-## Maternal/Hospital/BloodBanks
+## Maternal Hospital BloodBanks
 
 ### Maternal/Hospital/BloodBanks SignUp
 ![image](https://user-images.githubusercontent.com/52650290/161109658-2df4d1e7-01f2-4bb7-b5de-1269f89d6218.png)

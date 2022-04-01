@@ -9,7 +9,7 @@ Website Link: http://blood-support.live/
 ## Website Contents
 - [Patient](#Patient)
 - [Donor](#Donor)
-- [Organizations (Maternal/Hospital/Blood-Banks)](#Maternal-Hospital-BloodBank)
+- [Organizations (Maternal/Hospital/Blood-Banks)](#Maternal-Hospital-Blood-Banks)
 
 
 ## Patient

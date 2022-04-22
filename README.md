@@ -1,6 +1,6 @@
 # Blood Support
 
-Bridge the gap between blood donors & patients and hospitals & blood donors so that they can easily connect with nearby blood donors and blood banks. World’s first two-way communication blood service platform where you don’t only donate blood, you can also request blood.
+Bridge the gap between blood donors & patients and hospitals & blood banks so that they can easily connect with nearby blood donors and blood banks. World’s first two-way communication blood service platform where you don’t only donate blood, you can also request blood.
 
 Website Link: http://blood-support.live/
 

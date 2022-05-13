@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation</title>
+
+    <!--CSS File-->
+    <link rel="stylesheet" href="./css/homepage.css">
+
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/69fecb4176.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="loading()">
+
+    <!--Pre Loader Page-->
+    <div id="loading">
+
+    </div>
+
+    <!-- NavBar -->
+    <nav class="mainnav navbar navbar-expand-lg   navbar-dark text-light fixed-top">
+        <a class="navbar-brand font-weight-bold text-white pl-2" style="font-size: 26px;" href="index.html"> <img class="mr-0 pr-0"
+                src="./Images/icons8-drop-64.png" alt="" height="32" srcset=""> <img src="./Images/bloodsupport-logo.png" height="44" style="margin-left: -5px;"
+                alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active pr-3">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active pr-3">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item active pr-3">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item active pr-4 mr-2">
+                    <a class="nav-link" href="signin.html">Sign in</a>
+                </li>
+                <!-- <li class="nav-item active pr-4 mr-2">
+                    <a class="nav-link" href="#"></a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="banner">
+        <div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video autoplay muted loop plays-inline id="homevideo" class="d-block">
+                        <source src="./Images/Bg.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption mt-3">
+                        <h1>Blood Support</h1>
+                        <h2>Bridging the Gap</h2>
+                        <p class="mb-4">Welcome to Blood Support, It's our responsibility to connect you with the
+                            nearest blood bank or the hospital located in your area. Our services will allow you to reach blood at
+                            the time of emergency, Our donors are available 24/7 for saving your precious lives.
+                            Get in touch with us right now and save someone's live. Your single blood donation may
+                            even help save more than one life!</p>
+                        <a href='patient.html' class="button" data-mdb-ripple-color="dark">Need
+                            blood?</a>
+                        <a href='donate.html' class="button" id="btn2" data-mdb-ripple-color="dark">Want to donate?</a>
+                        <a href='organization.html' class="button" id="btn3"
+                            data-mdb-ripple-color="dark">Maternal/Hospital/Blood Bank</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--About Section-->
+    <section class="container mt-5" id="about">
+        <h1 class="text-center" style="text-transform: capitalize; font-size: 40px; font-weight: bold;">What is this all
+            about ?</h1>
+        <p class="aboutHeading3"></p>
+        <p class="container text-center mt-3" style="font-size:18px; font-weight: 450;">We solve the problem of blood
+            emergencies by connecting
+            blood donors and patients directly with the blood banks or the nearest hospital.</p>
+        <div class="row row-cols-1 row-cols-md-2 mt-5">
+            <div class="col col-lg-4 mb-3">
+                <div class="card">
+                    <img src="./Images/drop.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">What we do ?</h5>
+                        <p class="card-text">We will bridge the gap between the patients, donors, blood banks, maternity
+                            centers and hospitals across Pakistan with an efficient and seamless process.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-4  mb-2">
+                <div class="card">
+                    <img src="./Images/innovation.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Innovative</h5>
+                        <p class="card-text">It is an innovative approach to address global heath. We provide immediate
+                            access to blood donors. Connecting donors directly with patients.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-4  mb-2">
+                <div class="card">
+                    <img src="./Images/netwotk.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Network</h5>
+                        <p class="card-text">We are of the several community organizations working together as a
+                            network that responds to emergencies in an efficient manner.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-4  mb-2">
+                <div class="card">
+                    <img src="./Images/notice.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Get notified</h5>
+                        <p class="card-text">Connect works with network partners to connect blood donors directly with
+                            people in blood need
+                            through an automated email and a message service.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-4  mb-2">
+                <div class="card">
+                    <img src="./Images/save.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Save Life</h5>
+                        <p class="card-text"> We are a non profit foundation and Our main objective is to make sure that
+                            everything is done to protect
+                            vulnerable persons. Help us by making a gift!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-4  mb-2">
+                <div class="card">
+                    <img src="./Images/cost.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Totally Free</h5>
+                        <p class="card-text">Our ultimate goal is to provide an easy -to-use, easy-to-access, fast,
+                            efficient, and reliable way to get life-saving blood, totally Free of cost.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Testimonial Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h1 class="heade text-center">Testimonials</h1>
+            <p class="para text-center">Our success is measured by our users' satisfaction with our services and the care they receive when visiting our platform.
+             <br> Here are some testimonials of our users.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="review text-center lead">
+                        " If I can ever donate, I would. The way this place helped me, I would like to donate so that it
+                        can save someone else’s life as well." <br> <span class="font-weight-bold name">-Hasnain
+                            Sheikh</span>
+                    </p>
+                </div>
+                <div class="col-md-4 middle">
+                    <p class="review text-center lead">"Easy to use and I recommend this platform to whoever I can. I
+                        am very satisfied with the service that was provided here." <br> <span
+                            class="font-weight-bold name">
+                            -Dr.Faridha Munir</span>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p class="review text-center lead">
+                        Today, my father leads a normal, healthy and productive life. A tribute to the blood support
+                        platform commitment." <br>
+                        <span class="font-weight-bold name">
+                            -Shoaib Asad</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="Flink navbar navbar-expand-lg navbar-dark  pb-3 "
+        style="font-family: 'Open Sans' !important; margin-top: -80px !important;">
+        <a class=" pl-5 ml-5" style="color: #a00101;font-size: 16px;" href="index.html">
+            2022 Blood Support</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-5">
+                <li class="nav-item active pr-3">
+                    <a class="nav-link" href="index.html">Policy</a>
+                </li>
+                <li class="nav-item active pr-3">
+                    <a class="nav-link" href="index.html">About Us</a>
+                </li>
+                <li class="nav-item active pr-3 ">
+                    <a class="nav-link" href="#">help</a>
+                </li>
+                <li class="nav-item active pr-4 mr-5">
+                    <a class="nav-link" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!--Functions JS File-->
+    <script src="./js/index.js"></script>
+
+    <!--Required JS for Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

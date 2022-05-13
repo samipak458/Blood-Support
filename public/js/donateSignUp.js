@@ -27,14 +27,14 @@ const fs = getFirestore();
 
 // Text Fields
 let email = document.getElementById("inputEmail");
-let phone = document.getElementById("inputPhone");
-let age = document.getElementById("inputAge");
-let cnic = document.getElementById("inputCNIC");
-let bloodGroup = document.getElementById("selectBloodGroup").value;
-let address = document.getElementById("inputAddress");
-let city = document.getElementById("inputCity");
+// let phone = document.getElementById("inputPhone");
+// let age = document.getElementById("inputAge");
+// let cnic = document.getElementById("inputCNIC");
+// let bloodGroup = document.getElementById("selectBloodGroup").value;
+// let address = document.getElementById("inputAddress");
+// let city = document.getElementById("inputCity");
 let password = document.getElementById("inputPassword");
-let repassword = document.getElementById("inputRePassAgain");
+// let repassword = document.getElementById("inputRePassAgain");
 
 // Text Fields error messages
 let nameError = document.getElementById("name");
@@ -49,76 +49,74 @@ let repassError = document.getElementById("repassword");
 let errorMessage = document.getElementById("errorMessage");
 
 // Validation
+// // Email Validation
+// email.addEventListener('change', () => {
+//     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value) == false) {
+//         emailError.innerHTML = "*invalid email address";
+//     }
+//     else {
+//         emailError.innerHTML = "";
+//     }
+// })
 
+// // Age Validation
+// age.addEventListener('change', () => {
+//     if (age.value < 0 || age.value > 90) {
+//         ageError.innerText = "*Invalid age";
+//     }
 
-// Email Validation
-email.addEventListener('change', () => {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value) == false) {
-        emailError.innerHTML = "*invalid email address";
-    }
-    else {
-        emailError.innerHTML = "";
-    }
-})
+//     else if (age.value > 0 && age.value < 18) {
+//         alert("You cannot donate blood as you are under 18");
+//         ageError.innerText = "*ineligible";
+//         errorMessage.innerText = "*not eligible to donate";
+//     }
 
-// Age Validation
-age.addEventListener('change', () => {
-    if (age.value < 0 || age.value > 90) {
-        ageError.innerText = "*Invalid age";
-    }
+//     else {
+//         ageError.innerText = "";
+//         errorMessage.innerText = "";
+//     }
+// })
 
-    else if (age.value > 0 && age.value < 18) {
-        alert("You cannot donate blood as you are under 18");
-        ageError.innerText = "*ineligible";
-        errorMessage.innerText = "*not eligible to donate";
-    }
+// // Phone Number Validation
+// phone.addEventListener('change', () => {
 
-    else {
-        ageError.innerText = "";
-        errorMessage.innerText = "";
-    }
-})
+//     if (phone.value.length != 11) {
+//         phoneError.innerText = "*Phone number is not valid";
+//     }
+//     else {
+//         phoneError.innerText = "";
+//     }
+// })
 
-// Phone Number Validation
-phone.addEventListener('change', () => {
+// // CNIC Validation
+// cnic.addEventListener('change', () => {
+//     if (cnic.value.length != 13) {
+//         cnicError.innerText = "*Invalid CNIC";
+//     }
+//     else {
+//         cnicError.innerText = "";
+//     }
+// })
 
-    if (phone.value.length != 11) {
-        phoneError.innerText = "*Phone number is not valid";
-    }
-    else {
-        phoneError.innerText = "";
-    }
-})
+// // Address Validation
+// address.addEventListener('change', () => {
+//     if (address.value.length < 5) {
+//         addressError.innerText = "*Invalid Address";
+//     }
+//     else {
+//         addressError.innerText = "";
+//     }
+// })
 
-// CNIC Validation
-cnic.addEventListener('change', () => {
-    if (cnic.value.length != 13) {
-        cnicError.innerText = "*Invalid CNIC";
-    }
-    else {
-        cnicError.innerText = "";
-    }
-})
-
-// Address Validation
-address.addEventListener('change', () => {
-    if (address.value.length < 5) {
-        addressError.innerText = "*Invalid Address";
-    }
-    else {
-        addressError.innerText = "";
-    }
-})
-
-// City Validation
-city.addEventListener('change', () => {
-    if (city.value.length < 4) {
-        cityError.innerText = "*Invalid City";
-    }
-    else {
-        cityError.innerText = "";
-    }
-})
+// // City Validation
+// city.addEventListener('change', () => {
+//     if (city.value.length < 4) {
+//         cityError.innerText = "*Invalid City";
+//     }
+//     else {
+//         cityError.innerText = "";
+//     }
+// })
 
 
 // Password Validation
@@ -142,10 +140,7 @@ repassword.addEventListener('change', () => {
     }
 })
 
-
-
 // Donor Sign Up
-
 let signUp = document.getElementById("signup-form");
 let signUpBtn = document.getElementById("btn1");
 let id = 21456;
@@ -154,33 +149,33 @@ signUpBtn.addEventListener('click', (e) => {
     e.preventDefault();
 
 
-    // Check Form Details 
-    if (phone.value == "" || age.value == "" || cnic.value == "" || number.value == "" || email.value == "" || address.value == ""
-        || city.value == "" || password.value == "" || repassword.value == "") {
-        errorMessage.innerText = "*Please add your details";
-        alert("Please add your details");
-        location.reload();
-    }
+    // // Check Form Details 
+    // if (phone.value == "" || age.value == "" || cnic.value == "" || number.value == "" || email.value == "" || address.value == ""
+    //     || city.value == "" || password.value == "" || repassword.value == "") {
+    //     errorMessage.innerText = "*Please add your details";
+    //     alert("Please add your details");
+    //     location.reload();
+    // }
 
     // If every thing is alright then add this donor to database
-    else {
+    // else {
         errorMessage.innerText = "";
 
         let emailaddress = document.getElementById("inputEmail").value;
-        let donorname = document.getElementById("Name").value;
+        // let donorname = document.getElementById("Name").value;
 
         createUserWithEmailAndPassword(auth, emailaddress, password.value).then((userCredential) => {
             return setDoc(doc(fs, 'donors', userCredential.user.uid), {
-                Name: donorname,
+                // Name: donorname,
                 Email: emailaddress,
-                Phone: phone.value,
-                Age: age.value,
-                CNIC: cnic.value,
-                BloodGroup: bloodGroup,
-                Address: address.value,
-                City: city.value,
+                // Phone: phone.value,
+                // Age: age.value,
+                // CNIC: cnic.value,
+                // BloodGroup: bloodGroup,
+                // Address: address.value,
+                // City: city.value,
                 Password: password.value,
-                ID: id+23
+                // ID: id+23
             })
         }).then(() => {
             signUp.reset();
@@ -194,6 +189,6 @@ signUpBtn.addEventListener('click', (e) => {
             errorMessage.innerText = "Cannot Signup";
         });
 
-    }
+    // }
 
 });

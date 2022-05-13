@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 // Firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
 import {
@@ -7,7 +9,7 @@ import {
 import { getFirestore } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC8RMkayDqpQZN1wLz63b2VI-_fWnidVoQ",
+  apiKey: process.env.API_KEY,
   authDomain: "donate-blood-7e4ec.firebaseapp.com",
   projectId: "donate-blood-7e4ec",
   storageBucket: "donate-blood-7e4ec.appspot.com",

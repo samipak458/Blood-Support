@@ -52,6 +52,8 @@ const firebaseConfig = {
     measurementId: "G-FYZY495R9S"
 };
 
+const API_KEY = process.env.API_KEY;
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();

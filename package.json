@@ -1,0 +1,25 @@
+{
+  "name": "blood-support",
+  "version": "1.0.0",
+  "description": "Bridge the gap between blood donors & patients and hospitals & blood banks so that they can easily connect with nearby blood donors and blood banks. World’s first two-way communication blood service platform where you don’t only donate blood, you can also request blood.",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sshehrozali/Blood-Support.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sshehrozali/Blood-Support/issues"
+  },
+  "homepage": "https://github.com/sshehrozali/Blood-Support#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

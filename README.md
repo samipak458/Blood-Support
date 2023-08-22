@@ -66,9 +66,14 @@ In many cities of our country(Pakistan), mostly, blood banks are not available a
 ### Blood-Bank Dashboard
 ![image](https://user-images.githubusercontent.com/52650290/161110151-17cd75db-3e83-47c4-9f5b-8d2779cba740.png)
 
+# Code Of Conduct 📜
+
+To maintain a safe and inclusive space for everyone to learn and grow, contributors are advised to follow the [Code of Conduct](https://github.com/samipak458/Blood-Support/blob/main/CODE_OF_CONDUCT.md).
+
+
 # Feedback✌🏼
 
-If you have any feedback or suggestions please reach out to Project - Collaborators.  
+If you have any feedback or suggestions please reach out to me.  
 
 Or you can create a  <a href="https://github.com/samipak458/Blood-Support/issues">issue</a> and mention there , which new features or extension can make this Project more good.
 

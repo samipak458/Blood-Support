@@ -66,6 +66,20 @@ In many cities of our country(Pakistan), mostly, blood banks are not available a
 ### Blood-Bank Dashboard
 ![image](https://user-images.githubusercontent.com/52650290/161110151-17cd75db-3e83-47c4-9f5b-8d2779cba740.png)
 
+# Tech Stack
+The **"Blood Support"** project harnessed a range of cutting-edge technologies to craft a cohesive and efficient platform, aimed at seamlessly connecting blood banks, hospitals, and donors for swift access to blood during critical situations. The project's technological framework comprises:
+
+### Frontend Development: 
+The team leveraged HTML, CSS, and JavaScript to construct an engaging and responsive user interface, ensuring an appealing visual experience across various devices and screen sizes.
+
+### Firebase Integration: 
+Firebase played a pivotal role by serving as both an **authenticator and a robust backend infrastructure**. Its real-time data synchronization capabilities facilitated seamless interaction between users and blood banks or hospitals, enhancing user engagement and operational efficiency.
+
+### PWA Implementation: 
+The adoption of Progressive Web App (PWA) technology elevated the platform's accessibility, rendering a native app-like encounter even in low network conditions. This facilitated users in accessing the platform through diverse devices and web browsers.
+
+In alignment with the United Nations Sustainable Development Goal of Good Health & Well Being, "Blood Support" effectively bridged the gap between critical stakeholders, paving the way for prompt access to vital blood supplies during emergencies.
+
 # Code Of Conduct 📜
 
 To maintain a safe and inclusive space for everyone to learn and grow, contributors are advised to follow the [Code of Conduct](https://github.com/samipak458/Blood-Support/blob/main/CODE_OF_CONDUCT.md).

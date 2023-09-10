@@ -202,6 +202,8 @@ a:hover{
       }
     #homevideo{
         display: block;
+        height: 100%;
+        width: auto;
     }
     .carousel-caption{
         top: 110px !important;
